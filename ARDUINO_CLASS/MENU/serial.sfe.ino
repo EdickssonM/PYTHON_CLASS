@@ -30,7 +30,7 @@ void loop() {
       Serial.println("7.Encender Motor");
       Serial.println("8.Apagar Motor");
       Serial.println("9.Encender Todo");
-      Serial.println("a.Apagar Todo");
+      Serial.println("10.Apagar Todo");
     }
     if(input == '1')
     { 
@@ -71,7 +71,7 @@ void loop() {
                                               digitalWrite(LedVerde,HIGH);
                                               digitalWrite(Motor,HIGH);
                                             }else{
-                                                 if(input=='a') 
+                                                 if(input=="10") 
                                                  {
                                                    digitalWrite(LedRojo,LOW);
                                                    digitalWrite(LedAmarillo,LOW);
