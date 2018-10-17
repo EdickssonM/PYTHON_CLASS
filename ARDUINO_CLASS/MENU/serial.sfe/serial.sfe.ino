@@ -1,3 +1,4 @@
+//Sofia Chamorro - Felipe Diaz - Edicksson Miramag
 int LedRojo = 2;
 int LedAmarillo = 4;
 int LedVerde = 7;
@@ -19,7 +20,7 @@ void loop() {
   if(Serial.available()>0)
   {
     input = Serial.read();
-    if (input == '0'){
+    if(input == '0'){
       Serial.println("Menu");
       Serial.println("1.Encender Led Rojo");
       Serial.println("2.Apagar led Rojo");
