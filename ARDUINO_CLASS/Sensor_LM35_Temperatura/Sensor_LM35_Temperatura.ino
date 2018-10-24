@@ -19,7 +19,7 @@ void loop() {
   tempC = analogRead (pinSensorT);
   tempC = (5.0 * tempC * 100) / 1024.0;
   Serial.println (tempC);
-  delay (2000);
+  delay (1000);
   if (tempC >= 30){
     digitalWrite(LedRojo,HIGH);
     digitalWrite(LedAmarillo,LOW);
