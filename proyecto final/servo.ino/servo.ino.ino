@@ -24,6 +24,8 @@ int todo_on=0;
 int servo_on=0;
 int luzLetrero = 48;
 int letrero_on=0;
+int pinServo = 0;
+int valorServo =0;
 
 
 void setup() {
@@ -60,6 +62,15 @@ void loop() {
    {
     domotica=Serial.read();
     Serial.print(domotica);
+  }
+  {servoGaraje.write (90);
+  valorServo=analogRead (pinServo);
+  Serial.println(valorServo);
+  if(valorServo <20)
+  {
+    servoGaraje.write (0);
+  }
+  delay(100);
   }
     //tempC = analogRead (temperatura);
    // tempC = (5.0 * tempC * 100) / 1024.0;
