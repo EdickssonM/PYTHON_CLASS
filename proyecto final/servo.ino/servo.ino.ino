@@ -72,11 +72,11 @@ void loop() {
   }
   delay(100);
   }
-    //tempC = analogRead (temperatura);
-   // tempC = (5.0 * tempC * 100) / 1024.0;
-   // Serial.println (tempC);
-    //delay (1000);
-     //}
+    {tempC = analogRead (temperatura);
+    tempC = (5.0 * tempC * 100) / 1024.0;
+    Serial.println (tempC);
+    delay (1000);
+     }
     
       if (domotica == '1')
       { if(Cocina_on==0)
