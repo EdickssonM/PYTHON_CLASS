@@ -7,6 +7,7 @@ import tkinter
 #arduinoData = serial.Serial ('COM10',9600)
 
 def luces():
+        arduinoData.write('1')
 	luz=Tk()
 	luz.title("Luces")
 	luz.geometry("400x200")
